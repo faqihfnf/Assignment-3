@@ -1,0 +1,22 @@
+
+POST http://localhost:8000/users/register
+Content-Type: application/json
+
+{
+    "name": "Maryam Nur Fahmi",
+    "email": "maryam.fahmi@gmail.com",
+    "password":"mypassword123456"
+}
+
+###login user
+POST http://localhost:8000/users/login
+Content-Type: application/json
+
+{
+   "email": "maryam.fahmi@gmail.com",
+    "password":"mypassword123456"
+}
+
+### resources
+GET http://localhost:8000/users/resources
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YjIyZGJmNzI0ZmMzNTZhOTMxMjExZSIsIm5hbWUiOiJGYXFpaCIsImVtYWlsIjoiZmFxaWguZm5mQGdtYWlsLmNvbSIsImlhdCI6MTcyMzA3NTA4NSwiZXhwIjoxNzIzMDc1MTAwfQ.EbdTEwzxo09fm1bufLBmjs_uOC7fFaU--a3Es-7I6No

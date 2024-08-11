@@ -1,0 +1,26 @@
+GET http://localhost:8000/notes
+
+
+### create book
+POST http://localhost:8000/notes
+Content-Type: application/json
+
+{
+    "title" : "Note 123",
+    "content": "coba note di backend"
+}
+
+
+###Update
+
+PATCH http://localhost:8000/notes/66b7aa98f53a15f5a3717e83
+Authorization: 12345
+Content-Type: application/json
+
+{
+    "title": "Note 456",
+    "content" : "Update note"
+}
+
+###delete
+DELETE http://localhost:8000/notes/66b7aa58567b8c98f4e13934
